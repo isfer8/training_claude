@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CCDV-F Prep · Claude Certified Developer</title>
+  <meta name="description" content="Bilingual (EN/ES) study site for the Claude Certified Developer – Foundations exam: syllabus, glossary, practice and timed mock exams.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand">CCDV-F <span>Prep</span></a>
+    <nav class="mainnav" id="mainnav">
+      <a href="#/" data-nav="home">Inicio</a>
+      <a href="#/temario" data-nav="temario">Temario</a>
+      <a href="#/practica" data-nav="practica">Práctica</a>
+      <a href="#/examen" data-nav="examen">Simulacro</a>
+      <a href="#/repaso" data-nav="repaso">Repaso</a>
+      <a href="#/glosario" data-nav="glosario">Glosario</a>
+    </nav>
+    <div class="langswitch" role="group" aria-label="Idioma / Language">
+      <button data-lang="en" title="Solo inglés (como en el examen)">EN</button>
+      <button data-lang="help" title="Inglés con ayuda en español">EN + ayuda</button>
+      <button data-lang="es" title="Solo español">ES</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <p id="modal-text"></p>
+      <div class="modal-actions">
+        <button class="btn ghost" id="modal-cancel">Cancelar</button>
+        <button class="btn primary" id="modal-ok">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Material de estudio no oficial. No contiene preguntas reales del examen. Contrasta siempre con la
+      <a href="https://platform.claude.com/docs" target="_blank" rel="noopener">documentación oficial</a>
+      y con la guía del examen del Anthropic Partner Academy.</p>
+  </footer>
+
+  <!-- Data (plain JS so the site also works by opening index.html directly) -->
+  <script src="data/domains.js"></script>
+  <script src="data/glossary.js"></script>
+  <script src="data/questions/apps.js"></script>
+  <script src="data/questions/model.js"></script>
+  <script src="data/questions/agents.js"></script>
+  <script src="data/questions/prompt.js"></script>
+  <script src="data/questions/tools.js"></script>
+  <script src="data/questions/security.js"></script>
+  <script src="data/questions/claudecode.js"></script>
+  <script src="data/questions/evals.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
